@@ -1,0 +1,304 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #b3ebeb;
+   --cor-de-link: #ff2205;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 20px;
+    padding: 30px;
+    line-height: 25px;
+}
+ol, ul,li {
+    list-style-type: style none;;
+}
+a{
+    text-decoration:none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección encabezado*/
+
+.menu__header{
+    display: flex; 
+    align-items: center;  
+}
+
+.title{
+    background-color:beige;
+   
+    }
+
+.nada{
+    height: 30px;
+    width: 30px;
+}
+
+.menu__list{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;  
+}
+
+.about__container{
+  background-color:beige;
+ 
+  padding-left: 35px;
+}
+
+.title__div{
+    display: flex;
+   align-items: flex-start;
+}
+
+.title__profile{
+    display: flex;
+    border-radius: 150px;
+    height: 250px;
+    padding: 15px;
+    margin: 15px;
+     
+}
+/* seccion  de habilidades*/
+
+.skills__title{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding-top: 50px;
+}
+.skills__line{
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  width: 1110px;
+    height: 70px;
+    background:beige;
+
+}
+
+/* Sección de Hobbies*/
+.hobbies__title{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.hobbies__line{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 1150px;
+    height: 70px;
+    background:beige;
+}
+
+/*Formacion Academica*/
+.academic__title{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.academic__courses{
+    display: flex;
+    justify-content: space-between;
+    padding-inline-end:  30px;
+    width: 1150px;
+    height: 380px;
+    background:white;
+
+}
+
+
+/*Experiencia profesional*/
+
+.experience__section__title{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 60px;
+}
+/*este es para la calculadora*/
+.experiencie__box{
+    display: flex;
+    justify-content:center;
+    
+}
+.experience__info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+/*este es para el juego de adivinar el numero*/
+.experience__box{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 40px;
+
+}
+
+
+.experience__info-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+/*este es para el proyecto power bi*/
+.experience__box{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 40px;
+
+}
+.experience__info-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+/*pie de pagina */
+.footer__rodape{
+    display: flex;
+    flex-direction: column;
+    width: 1150px;
+    height: 100px;
+    background:beige;
+   
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width:1000px){
+   /*Menu*/
+.menu{
+    display: none;
+
+}
+/*Titulo*/
+.title{
+    display: none;
+
+}
+/*Sección sobre mi*/
+#sobre-mi{
+    display: none;
+}
+
+
+/*Skills*/
+#skills{
+  display: none;
+}
+
+/*Hobbies*/
+#hobbies{
+   display: none;
+}
+ 
+/*Formación Académica*/
+#formacion{
+   display: none;
+}
+
+/*Experiencia Profesional*/
+#xp{
+    display: none;
+}
+
+ /*Contacto*/
+ #contacto{
+ display: none;   
+}
+
+/*Footer*/
+#footer{
+    display: none;
+
+} 
+
+
+}
+
+/*Mobile*/
+@media (min-width: 325px) and (max-width:768px){
+
+/*Menu*/
+.menu{
+    display: none;
+
+}
+/*Titulo*/
+.title{
+    display: none;
+
+}
+/*Sección sobre mi*/
+.about{
+    display: none;
+}
+
+
+/*Skills*/
+.skills{
+  display: none;
+}
+
+/*Hobbies*/
+.hobbies{
+   display: none;
+}
+ 
+/*Formación Académica*/
+.academic{
+   display: none;
+}
+
+/*Experiencia Profesional*/
+.experience{
+    display: none;
+}
+
+ /*Contacto*/
+ .formcontato{
+ display: none;   
+}
+
+/*Footer*/
+.footer{
+    display: none;
+
+}
+
+}
