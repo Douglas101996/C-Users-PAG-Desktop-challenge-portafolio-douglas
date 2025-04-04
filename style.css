@@ -199,106 +199,72 @@ https://en.bem.info/methodology/quick-start/*/
 Utiliza las referencias de los breakpoints @media abajo */
 
 
-/*Tablet*/
-@media (min-width: 768px) and (max-width:1000px){
-   /*Menu*/
-.menu{
-    display: none;
 
-}
-/*Titulo*/
-.title{
-    display: none;
+/* Mobile - Estilos adaptativos, NO ocultes el contenido */
+@media (min-width: 325px) and (max-width: 768px) {
 
-}
-/*Sección sobre mi*/
-#sobre-mi{
-    display: none;
-}
+    /* Ejemplo de cómo adaptar el menú en lugar de ocultarlo */
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+        padding: 10px;
+    }
 
+    /* Ajustes para el título */
+    .title {
+        font-size: 22px;
+        text-align: center;
+        padding: 10px;
+    }
 
-/*Skills*/
-#skills{
-  display: none;
-}
+    /* Sección sobre mí */
+    .about {
+        padding: 15px;
+        font-size: 14px;
+    }
 
-/*Hobbies*/
-#hobbies{
-   display: none;
-}
- 
-/*Formación Académica*/
-#formacion{
-   display: none;
-}
+    /* Skills */
+    .skills {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 
-/*Experiencia Profesional*/
-#xp{
-    display: none;
-}
+    /* Hobbies */
+    .hobbies {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 
- /*Contacto*/
- #contacto{
- display: none;   
-}
+    /* Formación académica */
+    .academic {
+        padding: 10px;
+    }
 
-/*Footer*/
-#footer{
-    display: none;
+    /* Experiencia profesional */
+    .experience {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
 
-} 
+    /* Contacto */
+    .formcontato {
+        padding: 20px;
+    }
 
+    /* Footer */
+    .footer {
+        text-align: center;
+        font-size: 12px;
+        padding: 10px;
+    }
 
-}
-
-/*Mobile*/
-@media (min-width: 325px) and (max-width:768px){
-
-/*Menu*/
-.menu{
-    display: none;
-
-}
-/*Titulo*/
-.title{
-    display: none;
-
-}
-/*Sección sobre mi*/
-.about{
-    display: none;
-}
-
-
-/*Skills*/
-.skills{
-  display: none;
-}
-
-/*Hobbies*/
-.hobbies{
-   display: none;
-}
- 
-/*Formación Académica*/
-.academic{
-   display: none;
-}
-
-/*Experiencia Profesional*/
-.experience{
-    display: none;
-}
-
- /*Contacto*/
- .formcontato{
- display: none;   
-}
-
-/*Footer*/
-.footer{
-    display: none;
-
-}
-
+    /* Ajuste general de imágenes */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
