@@ -7,8 +7,8 @@ coloque nas sessões indicadas*/
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #b3ebeb;
-   --cor-de-link: #ff2205;
+   --cor-de-fundo: #cad1e7;
+   --cor-de-link: #f70e0e;
 }
 
 body {
@@ -47,7 +47,7 @@ https://en.bem.info/methodology/quick-start/*/
 }
 
 .title{
-    background-color:beige;
+    background-color:rgb(245, 224, 105);
    
     }
 
@@ -63,7 +63,7 @@ https://en.bem.info/methodology/quick-start/*/
 }
 
 .about__container{
-  background-color:beige;
+  background-color:rgb(245, 224, 105);
  
   padding-left: 35px;
 }
@@ -95,7 +95,7 @@ https://en.bem.info/methodology/quick-start/*/
   padding: 40px;
   width: 1110px;
     height: 70px;
-    background:beige;
+    background:rgb(245, 224, 105);
 
 }
 
@@ -113,7 +113,7 @@ https://en.bem.info/methodology/quick-start/*/
     padding: 20px;
     width: 1150px;
     height: 70px;
-    background:beige;
+    background:rgb(245, 224, 105);
 }
 
 /*Formacion Academica*/
@@ -191,7 +191,7 @@ https://en.bem.info/methodology/quick-start/*/
     flex-direction: column;
     width: 1150px;
     height: 100px;
-    background:beige;
+    background:rgb(245, 224, 105);
    
 }
 
